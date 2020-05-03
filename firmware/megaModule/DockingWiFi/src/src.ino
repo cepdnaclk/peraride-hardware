@@ -10,8 +10,8 @@
 
 #define STATION_ID "1111"
 
-#define WIFI_SSID "Techyon Lab"
-#define WIFI_PASSWORD "iot@ceykod"
+#define WIFI_SSID "******"
+#define WIFI_PASSWORD "******"
 
 // Communication Protocol Commands
 #define DOCK_LOCK 11

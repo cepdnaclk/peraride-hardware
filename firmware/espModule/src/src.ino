@@ -7,8 +7,8 @@
 #include <SPI.h>
 #include "MFRC522.h"
 
-#define WIFI_SSID "Techyon Lab"
-#define WIFI_PASSWORD "iot@ceykod"
+#define WIFI_SSID "******"
+#define WIFI_PASSWORD "******"
 
 #define STATION_ID 1111
 
