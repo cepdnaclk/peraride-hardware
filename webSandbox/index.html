@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+
+   <link href="./css/index.css" rel="stylesheet"/>
+   <link href="./css/w3.css" rel="stylesheet"/>
+   <link href="./css/w3-theme.css" rel="stylesheet"/>
+   <link href="./css/font-awesome.min.css" rel="stylesheet"/>
+
+   <script type="application/javascript" src="./js/jquery.min.js"></script>
+   <script type="application/javascript" src="./js/index.js"></script>
+   <link rel="shortcut icon" href="../img/fav.ico">
+
+   <title>BSS GUI</title>
+
+   <link href="./css/home.css" rel="stylesheet"/>
+   <link href="./css/color-slider.css" rel="stylesheet"/>
+
+   <script src="./js/jquery.min.js"></script>
+   <script src="./js/index.js"></script>
+
+
+   <style>
+   td{
+      vertical-align:middle!important;
+   }
+</style>
+</head>
+<body>
+
+   <div class="w3-display-container w3-top w3-card-2">
+      <div class="w3-bar w3-theme w3-large">
+         <a href="../home/" class="w3-bar-item w3-button w3-hover-theme w3-theme-button">
+            <i class="fa fa-home"></i></a>
+            <span class="w3-bar-item w3-large w3-padding-12 w3-hide-small">BSS GUI</span>
+
+            <div class="w3-right w3-dropdown-click">
+               <div id="userPanel" class="w3-dropdown-content  w3-white w3-card-4 w3-right w3-center w3-medium"
+               style="right:0!important;top:52px!important; width: 350px;">
+
+               <div class="w3-container">
+                  <div class="w3-row">
+                     <div class="w3-col s4">
+                        <img src='../../img/profile/userIcon.png' class='w3-responsive w3-padding-12' style='width: 80%;'>                  </div>
+                        <div class="w3-col s8 w3-padding-16 w3-left-align">
+                           <p class="w3-medium"> &nbsp; <span
+                              class="w3-small w3-text-gray"> &nbsp; </span><br>
+                           </p>
+
+                           <p>
+                              <a href="#" class="app-link">Settings</a>
+                              <a href="#" class="app-link">Messages</a>
+                           </p>
+                        </div>
+                     </div>
+                  </div>
+
+                  <div class="w3-padding-0 w3-btn-group w3-center w3-light-gray">
+                     <a href="../settings/" class="w3-btn w3-white w3-border w3-margin-8 w3-hide"
+                     style="width: 30%; box-shadow:0 0 0 0!important;">
+                     <i class="fa fa-gear" style="font-size:24px;"></i></a>
+
+                     <a href="../login/logout" class="w3-btn w3-white w3-border w3-margin-8 w3-right"
+                     style="width: 40%; box-shadow:0 0 0 0!important;">
+                     <i class="fa fa-sign-out" style="font-size:24px;"></i> Logout
+                  </a>
+               </div>
+            </div>
+         </div>
+
+         <a href="#" id="userPanelBtn"
+         class="w3-bar-item w3-button w3-theme-button w3-hover-theme w3-animate-opacity w3-right"
+         style="margin-right: 25px!important; border: 1px solid #000000;" onclick="toggleUserPanel()"><i
+         class="fa fa-user"></i></a>
+         <div class="w3-clear"></div>
+      </div>
+   </div>
+
+   <div class="w3-container">
+      <div class="w3-row">
+         <div class="w3-col m2 l2 hidden-sm">&nbsp;</div>
+         <div class="w3-col s12 m8 l8">
+            <div class="w3-container">
+               <br><br><br>
+            </div>
+         </div>
+      </div>
+      <br>
+   </div>
+
+   <div class="w3-container">
+      <div class="w3-row">
+
+         <div class="w3-row" >
+            <div class="w3-col m6">
+               <fieldset id="robot0Fieldset">
+                  <legend>Authentication</legend>
+                  <input type="text" name="tokenTxt" id="tokenTxt" class="w3-input"
+                  value="eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI1ZTVmYmFkMDRmOTAyNDAwMDQ3NWY1Y2QiLCJpYXQiOjE1ODc0Njg3Nzd9.wUEHJwONrOxeWoYH8WwgWmVKc4JOf8KKcxR_NIJL4M8">
+                  <button id="btnToken" class="w3-btn w3-button w3-theme-button" onclick="">Refresh</button>
+               </fieldset>
+            </div>
+         </div>
+
+         <div class="w3-row" >
+            <fieldset id="robot0Fieldset">
+               <legend>Dock</legend>
+               <div class="w3-col m6">
+                  <div class="w3-container w3-padding-12">
+                     <select type="text" name="dockId" id="dockId" class="w3-input">
+                        <option value="1111.1">1111.1</option>
+                        <option value="1111.3">1111.3</option>
+                        <option value="1111.5">1111.5</option>
+                     </select>
+
+                     <button id="btnDockLock" class="w3-btn w3-button w3-theme-button" onclick="dockLock()">Lock</button>
+                     <button id="btnDockUnlock" class="w3-btn w3-button w3-theme-button" onclick="dockUnlock()">Unock</button>
+                     <button id="btnDockRefresh" class="w3-btn w3-button w3-theme-button" onclick="listDocks()">Refresh</button>
+                  </div>
+               </div>
+               <div class="w3-col m6">
+                  <div class="w3-container w3-padding-3">
+                     <ul class="w3-navbar">
+                        <li style="margin: 15px;">Updated on: <span id="dockTimeUpd"></span></li>
+                        <li class="w3-right w3-hover-theme"><a id="btnDockClear" class="tablink w3-hover-theme">Clear</a></li>
+                     </ul>
+                     <textarea id="dockResp" style="width:100%;" rows=5></textarea>
+                  </div>
+               </div>
+            </fieldset>
+         </div>
+
+         <div class="w3-row" >
+            <fieldset id="robot0Fieldset">
+               <legend>Bike</legend>
+               <div class="w3-col m6">
+                  <div class="w3-container w3-padding-12">
+                     <select type="text" name="bikeId" id="bikeId" class="w3-input">
+                        <option value="10100">10001</option>
+                        <option value="10100">10100</option>
+                        <option value="10000">10000</option>
+                     </select>
+
+                     <button id="btnBikeLock" class="w3-btn w3-button w3-theme-button" onclick="">Lock</button>
+                     <button id="btnBikeUnlock" class="w3-btn w3-button w3-theme-button" onclick="bikeUnlock()">Unlock</button>
+                     <button id="btnBikeRefresh" class="w3-btn w3-button w3-theme-button" onclick="listBikes()">Refresh</button>
+                  </div>
+               </div>
+               <div class="w3-col m6">
+                  <div class="w3-container w3-padding-3">
+                     <ul class="w3-navbar">
+                        <li style="margin: 15px;">Updated on: <span id="dockTimeUpd"></span></li>
+                        <li class="w3-right w3-hover-theme"><a id="btnBikeClear" class="tablink w3-hover-theme">Clear</a></li>
+                     </ul>
+                     <textarea id="bikeResp" style="width:100%;" rows=5></textarea>
+                  </div>
+               </div>
+            </fieldset>
+         </div>
+
+      </div>
+   </div>
+
+   <script src="./js/sensors.js"></script>
+
+   <script type="text/javascript">
+   $(document).ready(function(){
+      $("#btnBikeClear").click(function(){
+         $("#bikeResp").html("");
+      });
+
+      $("#btnDockClear").click(function(){
+         $("#dockResp").html("");
+      });
+
+   });
+
+   </script>
+
+</body>
+</html>

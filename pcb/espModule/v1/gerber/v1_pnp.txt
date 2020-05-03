@@ -1,0 +1,66 @@
+*Pick And Place List
+*Company=
+*Author=
+*eMail=
+*
+*Project=v1
+*Date=10:24:14
+*CreatedBy=Fritzing 0.9.3b.04.19.5c895d327c44a3114e5fcc9d8260daf0cbb52806
+*
+*
+*Coordinates in mm, always center of component
+*Origin 0/0=Lower left corner of PCB
+*Rotation in degree (0-360, math. pos.)
+*
+*No;Value;Package;X;Y;Rotation;Side;Name
+1;;;42.7246;-26.2485;0;Bottom;Via18
+2;;;3.35441;-2.75345;0;Bottom;Hole2
+3;;;18.5944;-37.6785;0;Bottom;Via17
+4;;THT;45.2644;-16.0885;-90;Bottom;J16
+5;10k;1206 [SMD];14.5044;-22.4385;180;Bottom;R1
+6;100nF;100 mil [THT, multilayer];43.9944;-12.2785;90;Bottom;470pF
+7;;THT;4.62441;-41.4885;-90;Bottom;Push
+8;;;40.8196;-5.29339;0;Bottom;Via14
+9;;THT;4.62441;-9.73854;180;Bottom;LED
+10;;;28.7868;-11.7427;0;Top;blkr1
+11;;THT;55.2443;-46.5684;0;Bottom;J15
+12;;THT;4.62441;-25.6135;0;Bottom;RC522
+13;100µF;100 mil [THT, electrolytic];52.8844;-23.7085;180;Bottom;C1
+14;;;7.16441;-32.5985;0;Bottom;Via7
+15;;THT;4.62441;-49.1085;180;Bottom;Limit
+16;;;56.6945;-56.7285;0;Bottom;Hole5
+17;10k;1206 [SMD];44.1506;-28.7885;0;Bottom;R3
+18;adjustable;sot223;54.1544;-15.3862;180;Bottom;U2
+19;;;56.6945;-2.75345;0;Bottom;Hole1
+20;;;18.6306;-27.0847;0;Bottom;Via16
+21;;;16.0544;-37.6785;0;Bottom;Via6
+22;150;1206 [SMD];12.5796;-44.0137;0;Bottom;R12
+23;10k;1206 [SMD];44.1503;-33.8685;0;Bottom;R9
+24;2.2k;1206 [SMD];12.5244;-51.6485;0;Bottom;R11
+25;10k;1206 [SMD];44.1481;-31.3285;180;Bottom;R10
+26;;;13.0082;-27.4462;0;Bottom;Via3
+27;10k;1206 [SMD];14.5044;-25.087;180;Bottom;R2
+28;;300 mil [THT];22.2144;-47.6231;90;Bottom;D1
+29;;;9.06941;-21.8035;0;Bottom;Via2
+30;12V;THT;36.1844;-49.1085;180;Bottom;OMRON1
+31;;SOT-23 [SMD];11.9291;-47.6736;180;Bottom;Q1
+32;;;7.16441;-47.8385;0;Bottom;Via10
+33;;;3.35441;-56.7285;0;Bottom;Hole4
+34;;;13.5144;-18.6285;0;Bottom;Via15
+35;;;9.06941;-30.6935;0;Bottom;Via1
+36;;;16.0544;-12.9134;0;Bottom;Via13
+37;;THT;18.509;-47.8385;-90;Bottom;U4
+38;;;10.9744;-3.38839;0;Bottom;Via11
+39;;5 mm [THT];14.1494;-7.88956;0;Bottom;LED1
+40;;THT;43.9944;-21.1685;0;Bottom;S1
+41;;THT;43.9944;-8.46854;-90;Bottom;J1
+42;100;1206 [SMD];8.43442;-6.91864;-90;Bottom;R14
+43;;THT;47.8044;-12.2785;-90;Bottom;J13
+44;;THT;55.2443;-33.8495;0;Bottom;J14
+45;;;13.0033;-35.1024;0;Bottom;Via4
+46;;;18.6306;-23.0939;0;Bottom;Via5
+47;;;28.7812;-24.9309;180;Bottom;U3
+48;;;57.9644;-23.7085;0;Bottom;Via19
+49;10k;1206 [SMD];12.5244;-40.2185;0;Bottom;R13
+50;;;7.16441;-13.5484;0;Bottom;Via8
+51;;;40.1462;-31.0229;0;Bottom;Via12
